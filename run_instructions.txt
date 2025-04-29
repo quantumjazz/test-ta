@@ -1,0 +1,52 @@
+Project Setup & Execution Guide
+===============================
+
+Go to the project directory. All text materials must be in "Documents" folder. 
+
+1. Create and activate a virtual environment
+--------------------------------------------
+
+Create the environment:
+
+python3 -m venv venv
+
+
+Activate the environment:
+
+source venv/bin/activate
+
+
+2. Install dependencies
+-----------------------
+
+pip install -r requirements.txt
+
+
+
+3. Run the pipeline in order
+----------------------------
+
+Step 1: Prepare documents
+
+python scripts/prepare_documents.py
+
+
+Step 2: Embed document chunks
+
+python scripts/embed_documents.py
+
+
+Step 3: Create final dataset
+
+python scripts/create_final_data.py
+
+
+Step 4: Test the RAG pipeline manually
+
+python src/main.py
+
+
+Step 5: Launch the web app
+
+python src/app.py
+
