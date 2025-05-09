@@ -80,7 +80,7 @@ def main():
     
     # Set embedding parameters
     model_name = "text-embedding-ada-002"
-    max_tokens_per_batch = 250000
+    max_tokens_per_batch = 100000
     
     print("Generating embeddings using OpenAI model:", model_name)
     embeddings = embed_with_openai(texts, model=model_name, max_tokens_per_batch=max_tokens_per_batch)
