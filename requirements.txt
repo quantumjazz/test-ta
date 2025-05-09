@@ -1,7 +1,7 @@
 PyPDF2
 python-docx
 nltk
-openai==0.28
+openai
 python-dotenv
 sentence-transformers
 faiss-cpu
