@@ -4,7 +4,8 @@ from flask import Flask, render_template, request, jsonify
 
 # Configure Flask to look for templates in the project root's "templates" folder.
 template_dir = os.path.join(os.path.dirname(__file__), '..', 'templates')
-app = Flask(__name__, template_folder=template_dir)
+static_dir = os.path.join(os.path.dirname(__file__), '..', 'static')
+app = Flask(__name__, static_folder=static_dir, template_folder=template_dir)
 
 @app.route('/')
 def index():
